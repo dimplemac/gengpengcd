@@ -1,66 +1,70 @@
-# Site settings
-title: Hanuman
-description: Hanuman is a minimal yet powerful Jekyll theme for your blogs and websites.
-cover: assets/images/radhakrishna.jpg
-logo: assets/images/logo.png
-favicon: assets/images/favicon.png
-baseurl: "/hanuman/" # the subpath of your site, e.g. /blog/ or / for root
-url: "https://samanyougarg.com" # the base hostname & protocol for your site
+# Welcome to Jekyll!
 
-pagination:
+# Website settings
+title: Jalpc
+description: Jack's blog,use Jekyll and github pages.
+keywords: Jack,Jalpc,blog,Jekyll,github,gh-pages
+baseurl:  /Jalpc # if you have suburl as homepage like '/homepage', please change it to '/homepage' and your repo's name should be 'homepage'
+url: https://jarrekk.github.io/Jalpc  # url should be 'http://<github_username>.github.io/homepage' as before
+# url: http://127.0.0.1:4000
+img_path: /Jalpc/static/assets/img/blog  # url should be '/homepage/static/assets/img/blog' as before
 
-  # Site-wide kill switch, disabled here it doesn't run at all 
-  enabled: true
+# author -- index page "about me" section
+author:  # change following line to your infomation.
+  name: GitHub  # Be used at blog posts' author.
+  first_name: Hub  # Be used at index page about me section.
+  last_name: Git  # Be used at index page about me section.
+  avatar: /static/assets/img/landing/avatar.jpg  # upload your avatar at directory and edit it.
+  github_username: jarrekk  # Leave blank if you don't have now
+  linkedin_id: jarrekk # Leave blank if you don't have now
+  facebook_username: jiakunnj  # Leave blank if you don't have now
+  twitter_username: jiakun614  # Leave blank if you don't have now
+  email: me@jarrekk.com  # Leave blank if you don't have now
+  cv: http://cv.jarrekk.com  # An online CV can be printed as PDF, leave blank if you don't have now
+  # skill icons are on avatar's left and right side. Reference urls are http://fontawesome.io/ and http://fizzed.com/oss/font-mfizz
+  skill_icon1:
+    - name: icon-apache
+    - name: fa-linux
+  skill_icon2:
+    - name: fa-linux
+    - name: icon-apache
+  desc: Introduce myself will be here.  # Describe yourself.
 
-  # Set to 'true' to enable pagination debugging. This can be enabled in the site config or only for individual pagination pages
-  debug: false
+# comment
+disqus:  # if you wanna comment feature, go to https://disqus.com/ to get your configuration; if not, comment following two lines.
+  name: jalpc
 
-  per_page: 5
+# analytics
+## google analytics
+ga:  # if you wanna this feature, go to https://www.google.com/analytics/ to get your configuration; if not, comment following line.
+  id: UA-93473370-3
 
-# Social
-facebook: facebook
-twitter: twitter
-github:  github
+## google optimize
+go:
+  # id:
 
-#Additional Pages
-about: about
-contact: contact
-privacy-policy: privacy-policy
+## growingIO
+gio:  # if you wanna this feature, go to https://www.growingio.com/ to get your configuration; if not, comment following line.
+  # id:
 
+## donation
+donation: on  # type 'on'/'off' to choice display donation button at post page or not
 
-permalink: /:title
+## carousels
+index_carousel: on  # index page carousel switch
+blog_carousel: on  # blog page carousel switch
 
-
-# Google Analytics
-analytics_id: ""
+# scss
+sass:
+  style: compressed
 
 # Build settings
+encoding: utf-8
+
+# other settings
+highlighter: rouge
 markdown: kramdown
-
 kramdown:
-  parse_block_html: true
+  input: GFM
+  syntax_highlighter: rouge
 
-plugins:
-  - jekyll-paginate-v2
-
-
-# Settings for rake task
-safe: False
-lsi: False
-username: samanyougarg #github username
-repo: hanuman #github repository
-branch: master #branch
-relative_source: ../hanuman/ #source directory
-destination: ../hanuman-pages/ #destination directory
-production_url:  https://samanyougarg.com/
-source_url:  https://github.com/samanyougarg/hanuman #source repository url
-
-exclude:
-  - README.md
-  - Rakefile
-  - Gemfile
-  - Gemfile.lock
-  - changelog.md
-  - "*.Rmd"
-  - vendor
-  - .travis.yml
