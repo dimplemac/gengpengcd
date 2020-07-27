@@ -1,5 +1,7 @@
-{% include analytics.html %}
-
-{% if site.disqus %}
-<script id="dsq-count-scr" src="https://{{ site.disqus.name }}.disqus.com/count.js" async></script>
-{% endif %}
+<div class="footer">
+  <div class="container">
+    <div class="twelve columns right">
+      <p>&copy; {{ site.title }} - {{ site.time | date:"%Y"}}</p>
+    </div>
+  </div>
+</div>
