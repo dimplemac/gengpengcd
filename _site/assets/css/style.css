@@ -169,6 +169,9 @@ and (min-device-width : 768px)  {
   min-width: 250px;
   max-width: 250px;
   min-height: 100vh;
+  background: #7386D5;
+  color: #fff;
+  transition: all 0.3s;
 }
 
 #sidebar.active{
@@ -209,12 +212,10 @@ a, a:hover, a:focus {
     transition: all 0.3s;
 }
 
-#sidebar {
-    /* don't forget to add all the previously mentioned styles here too */
-    background: #7386D5;
-    color: #fff;
-    transition: all 0.3s;
-}
+/*#sidebar {
+     don't forget to add all the previously mentioned styles here too 
+    
+}*/
 
 #sidebar .sidebar-header {
     padding: 20px;
