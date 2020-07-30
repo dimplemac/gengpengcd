@@ -23,7 +23,7 @@ location: Hangzhou, Zhejiang
 date: true
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://gengpeng.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-author: masquito mas tunto de la manada
+author: el masquito mas tunto de la manada
 google_analytics: UA-101394056-1
 
 # SEO
